@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="input-div">
+      <label class="input-label" for="day">DAY</label>
+      <label class="input-label" for="month">MONTH</label>      
+      <label class="input-label" for="year">YEAR</label>
+      <input class="input-field" placeholder="DD" type="text" id="day" maxlength="2" minlength="2" name="day-input">
+      <input class="input-field" placeholder="MM" type="text" id="month" maxlength="2" minlength="2" name="month-input">
+      <input class="input-field" placeholder="YYYY" type="text" id="year" maxlength="4" name="year-input">
+      <p class="error1"></p>
+      <p class="error2"></p>
+      <p class="error3"></p>
+    </div>
+    <div class="hr-button">
+      <hr>
+      <button title="Calculate" type="button" class="arrow-button">
+      <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+    </div>
+    <div class="result">
+      <p class="years"><span class="number yearOut">--</span>years</p>
+      <p class="months"><span class="number monthOut">--</span>months</p>
+      <p class="days"><span class="number dayOut">--</span>days</p>
+     </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Andrejicc</a>.
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
