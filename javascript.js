@@ -41,10 +41,12 @@ calculateButton.addEventListener('click', () => {
 
   dayOut.innerText = days;
   monthOut.innerText = months;
-  if(Y>=100){
+  if(Y>=1000){
   yearOut.innerText = years;
+  } else if (Y<10){
+   yearOut.innerText = years+2000;
   } else {
-   yearOut.innerText = years+1900;
+  yearOut.innerText = years+1900;
   }
 });
 
