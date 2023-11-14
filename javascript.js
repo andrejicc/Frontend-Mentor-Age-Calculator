@@ -40,8 +40,12 @@ calculateButton.addEventListener('click', () => {
   }
 
   dayOut.innerText = days;
-  monthOut.innerText = months-1;
+  monthOut.innerText = months;
+  if(Y>=100){
   yearOut.innerText = years;
+  } else {
+   yearOut.innerText = years+1900;
+  }
 });
 
 function numOfDaysInMonth(Y, M) {
